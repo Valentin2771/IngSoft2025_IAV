@@ -1,2 +1,2 @@
 # IngSoft2025_IAV
-Inginerie Software
+Proiectul unui site web pentru disciplina Inginerie Software
