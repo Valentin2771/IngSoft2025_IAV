@@ -1,0 +1,88 @@
+/* Styles for user.php */
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header, footer, main{
+    border: .2rem lightgray solid;
+    border-radius: .3rem;
+    min-width: 25vw;
+    margin: .3rem auto;
+    padding: .3rem;
+}
+h1, h2, h3{
+    text-align: center;
+}
+table, td, th {
+    border:1px solid black;
+    border-collapse: collapse;
+    padding:.3rem;
+}
+
+td, th{
+    font-size: small;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: .2rem;
+    background-color: lightgray;
+    border-radius: .1rem;
+}
+
+a:visited, a:link {
+    color: royalblue;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+}
+#user-del-error{
+    color: red;
+    font-weight: bold;
+}
+
+#footer-content{
+    margin-top: 2.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.table-wrapper{
+    margin:1%;
+    width: 48%;
+    vertical-align: top;
+    display: inline-block
+}
+
+.table-wrapper > table{
+    width:93%;
+    margin: auto;
+}
+
+@media only screen and (max-width:767px) {
+    *{
+        font-size: small;
+    }
+    td, th{
+        font-size: smaller;
+    }
+    .table-wrapper {
+        width: 93%;
+        margin: auto;
+        display: block;
+    }
+
+    nav li {
+        margin: 0.3em;
+        display: block;
+        
+    }
+    nav li > a{
+        width: 100%;
+        text-align: center;
+    }
+}

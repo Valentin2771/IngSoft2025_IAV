@@ -1,0 +1,160 @@
+/* Styles for landing page and post page */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/moonlanding_30.jpg');
+    background-attachment: fixed;
+    background-color: antiquewhite;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1, h2, h3{
+    text-align: center;
+}
+
+a:visited, a:link {
+    color: royalblue;
+}
+
+.blue{
+    color: royalblue;
+    background-color: whitesmoke;
+    width: fit-content;
+    margin-top: 1.6rem;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: .3rem;
+}
+
+.gray{
+    color: lightgray;
+}
+
+.author{
+    font-size: small;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+main, header, footer{
+    width: 90%;
+    margin: 0 auto .3rem auto;
+    padding: .3rem;
+    background-color: antiquewhite;
+
+}
+
+header{
+    background-image: url('../img/vintage-cameras_120.jpg');
+    background-attachment: fixed;
+}
+
+nav{
+    padding: inherit;
+    background-color: inherit;
+}
+
+nav > a{
+    background-color: gainsboro;
+    padding: .3rem;
+}
+
+header, footer{
+    min-height: 25vh;
+}
+
+#footer-content{
+    margin-top: 2.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.one-third{
+    width: 33%;
+    float: left;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-radius: .1rem;
+    padding: .3rem;
+    overflow: auto;
+}
+
+.clearfix::after{
+    display:table;
+    content:"";
+    clear:both;
+}
+
+.fixed-button{
+    display: none;
+    position:fixed;
+	top:50vh;
+	right:1em;
+    background-color: black;
+    border-radius:50%;
+    padding: .4em;
+}
+
+.fixed-button > a {
+    color: whitesmoke;
+}
+
+.single-post{
+    margin: 0 auto;
+    width: 98%;
+    border: 1px solid lightgray;
+    border-radius: .3rem;
+    padding: .3rem;
+}
+
+.post-img > img {
+    max-width: 100%;
+    padding:.3em;
+}
+
+.single-post-img > img{
+    width: 100%;
+    padding:.3em;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+    .one-third{
+        width: 49%;
+        margin: 1% auto;
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+ 
+    .clearfix{
+        display: none;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width:767px) {
+
+    .one-third{
+        width: 90%;
+        margin: auto;
+        float: none;
+    }
+
+    nav > a{
+        display: block;
+        width:100%;
+        border-bottom: 1px gray solid;
+        text-align: center;
+    }
+
+    .fixed-button{
+        display: inline-block;
+    }
+
+}

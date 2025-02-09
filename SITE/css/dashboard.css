@@ -1,0 +1,89 @@
+/* Styles for dashboard */
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+span {
+    font-size: small;
+}
+.red {
+    color: red;
+}
+h1, h2{
+    text-align: center;
+}
+.sixty{
+    width:60%;
+    float: left;    
+}
+
+.forty{
+    width:40%;
+    float: left;
+}
+
+#post-form{
+    border: 2px solid black;
+    border-radius: .3rem;
+    width: 95%;
+    padding: 1rem;
+    margin: 0 auto 1rem !important;
+}
+
+#title, #content{
+    display: block;
+    margin: .3rem auto;
+    width: 95%;
+}
+
+#content{
+    border-radius: .3rem;
+    height:18rem;
+    padding: .3rem;
+    font-size: medium;
+}
+
+.clearfix::after{
+    display:table;
+    content:"";
+    clear:both;
+}
+
+#img-table > table{
+    width: 90%;
+    margin: 2rem auto 1rem;
+}
+
+table, th, td{
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: .3rem;
+    font-size: small;
+}
+
+.button-link {
+    text-decoration: none;
+    display: inline-block;
+    background-color: gainsboro;
+    border-radius: .3rem;
+    padding: .4rem;
+    margin-bottom: .3rem;
+    margin-left: .3rem;
+}
+
+a:visited, a:link{
+    color: royalblue;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:767px) {
+    .sixty, .forty {
+        width:93%;
+        margin: auto;
+        float:none;
+    }
+}

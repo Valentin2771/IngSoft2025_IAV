@@ -1,0 +1,105 @@
+/* Styles for Login, Register, Contact and Reset Password pages */
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    margin: 1rem auto;
+    max-width: 45%;
+    border: .2rem solid black;
+    padding: .9rem;
+    border-radius: .5rem;
+}
+span {
+    font-size: small;
+}
+h1, h2{
+    text-align: center;
+}
+
+#buttonVal {
+    display: inline-block;
+    border: 1px solid white;
+    padding:.5rem;
+    margin-top: 1rem;
+    border-radius: .3rem;
+    background-color: lightgray;
+    color: green;
+    cursor: pointer;    
+}
+
+a:visited, a:link {
+    color: royalblue;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+/*sendMail styles */
+
+#mail-form{
+    width: 95%;
+    margin: 0 auto 1rem !important;
+}
+
+#content, .custom-input{
+    display: inline-block;
+    margin: .3rem auto;
+    padding: .3rem;
+}
+
+.custom-input{
+    width: 50%;
+}
+
+#content {
+    font-size: medium;
+    height:18rem;
+    width: 90%;
+}
+
+.button-link {
+    text-decoration: none;
+    display: inline-block;
+    background-color: gainsboro;
+    border-radius: .3rem;
+    padding: .4rem;
+    margin-bottom: .3rem;
+    margin-left: .3rem;
+}
+
+/* Captcha styles */
+#captchaBackrgound{
+    margin-top: 1rem;
+    height: 6rem;
+    width: 8rem;
+    border-radius: .4rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#captcha{
+    height: 80%;
+    width: 80%;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width:767px){
+    .wrapper{
+        max-width: 100%;
+    }
+
+    .custom-input{
+        width: 90%;
+    }
+}
