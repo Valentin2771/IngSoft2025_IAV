@@ -22,12 +22,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $mail->isSMTP();
     $mail->SMTPAuth = true;
 
-    $mail->Host = ""; // the smtp server, like smtp.gmail.com
+    $mail->Host = "smtp.gmail.com"; // the smtp server, like smtp.gmail.com
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
     $mail->Username = ""; // The user login for the smtp server like 'john.doe12356@gmail.com'
-    $mail->Password = ""; // The 16-character app password provided by Gmail, once the Two-Steps authentication is set
+    $mail->Password = ""; // The 16-character app password provided by Gmail, once the Two-Steps authentication was set and App Password was generated
 
     $mail->setFrom($email, $name); 
     // setting the first parameter will not work, due to DKIM https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail
@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     $mail->Subject = $subject;
     $stringToBody = "Hey, the unregistered user '" . $name . "', having " . $email . " as mail address, has sent you the following message:<div>". $content . "<div>";
-    $mail->addAddress("valentin.iclozan27@gmail.com", "Blue Jack"); // This is where to receive emails
+    $mail->addAddress("valentin.iclozan27@gmail.com", "Blue Jack"); // This is where to receive emails, so provide your gmail.address instead valentin.iclozan27@gmail.com
     $mail->Body = $stringToBody;
     $mail->isHTML(true); // Message can contain html code
 
